@@ -1,0 +1,46 @@
+.loginWrapper {
+  display: flex;
+}
+
+.welcomeMessage {
+  max-width: 480px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+@media(max-width: 600px) {
+  .logoBox {
+    justify-content: center;
+  }
+
+  #cloudText {
+    text-align: center;
+  }
+  #cloudNoAccountText {
+    text-align: center;
+  }
+}
+
+.logo {
+  width: 15rem;
+}
+
+.loginContent {
+  max-width: 480px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px 0;
+}

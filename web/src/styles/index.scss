@@ -1,0 +1,82 @@
+@import './reset.css';
+@import './spacer.css';
+
+
+:root {
+  // -- colors:
+  --primary: #000000;
+  --primary-accent: #40aedb;
+  --secondary: #004aed;
+  --secondary-light: rgba(38, 121, 246, 0.1);
+  --background-grey: #FAFAFA;
+
+
+  // -- text colors:
+  --text: #363636;
+  --text-detail: #626262;
+  --warning: #eb4d4b;
+
+  //  -- gradients:
+  --secondary-gradient: linear-gradient(90deg, var(--secondary) 0%, var(--primary-accent) 100%);
+
+  // -- utilities:
+  --container-width: 1000px;
+  --shadow-small: 0px 10px 20px -10px rgba(0,0,0,0.1);
+  --shadow-large: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  --default-radius: .25rem;
+  --medium-radius: 0.4rem;
+  --large-radius: .5rem;
+
+  --viewport-padding: 1rem;
+  --section-padding: 5rem;
+
+  // -- breakpoints:
+  --small-bp: 600px;
+  --default-icon-font-size: 1.25rem;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: var(--text);
+  background-color: var(--background-grey);
+}
+
+.NotFoundWrapper {
+  max-width: 480px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px 0;
+  text-align: center;
+  align-items: center;
+}
+
+#customButton {
+  background-color: #4ca928;
+  color: white;
+
+  &:hover {
+    background-color: #61c534;
+  }
+}
+
+.date-range-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .date-picker {
+    margin: 0.5rem;
+    width: 100%;
+  }
+}
